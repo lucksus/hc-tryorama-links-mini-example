@@ -4,7 +4,7 @@ import path from "path";
 export const sleep = ms => new Promise(r => setTimeout(r, ms))
 
 const conductorConfig = Config.gen();
-const dm = path.join(__dirname, "../../workdir/links-test.dna");
+const dm = path.join(__dirname, "../workdir/links-test.dna");
 const installation: InstallAgentsHapps = [
   // agent 0
   [

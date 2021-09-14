@@ -2,7 +2,6 @@
 
 Run:
 ```
-nix-shell
 npm install
 npm test
 ```
