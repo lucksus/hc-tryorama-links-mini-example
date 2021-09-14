@@ -31,6 +31,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd tests
-    - run: nix-shell --run npm i
+    - run: nix-shell --run npm install
     - run: nix-shell --run npm test
