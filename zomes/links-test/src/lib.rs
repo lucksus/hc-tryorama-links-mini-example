@@ -34,6 +34,7 @@ pub fn create(message: String) -> ExternResult<()> {
 #[hdk_extern]
 pub fn fetch_inbox(_: ()) -> ExternResult<Vec<String>> {
     let mut result = Vec::new();
+    debug!("Agent looking for links: {:?}", agent_info()?.agent_latest_pubkey);
     for link in get_links(inbox_hash()?, Some(LinkTag::new(String::from("message"))))?.into_inner() {
         debug!("Link found: {:?}", link);
         let entry = get(link.target, GetOptions::latest())?.unwrap();
