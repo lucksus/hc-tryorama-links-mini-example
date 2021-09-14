@@ -1,0 +1,4 @@
+.cargo
+target
+tests/node_modules
+workdir/links-test.dna

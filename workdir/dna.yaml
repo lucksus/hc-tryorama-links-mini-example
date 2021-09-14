@@ -1,0 +1,8 @@
+---
+manifest_version: 1
+name: "links-test"
+uuid: 00000000-0000-0000-0000-000000000000
+properties: 
+zomes: 
+  - name: links-test
+    bundled: ../target/wasm32-unknown-unknown/release/links_test.wasm
